@@ -23,15 +23,13 @@ try:
            '--before-ch 31 ' \
            '--deploy-vis ' \
            '--gpu_memory_fraction 0.9 ' \
-           '--output-dir ./output/v2_93/Regular  ' \
+           '--output-dir ./output/v2_93/Regular ' \
            '--test-list datas/Regular/list.txt ' \
            '--prefix datas/Regular'.split(' ')
     print(argv)
 except:
     IN_COLAB = False
     argv = sys.argv
-
-from config import *
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--model-dir')
@@ -53,6 +51,8 @@ parser.add_argument('--no_bm', type=int, default=1)
 parser.add_argument('--gpu_memory_fraction', type=float, default=0.1)
 parser.add_argument('--deploy-vis', action='store_true')
 args = parser.parse_args(argv)
+
+from config import *
 
 MaxSpan = args.max_span
 args.indices = indices[1:]

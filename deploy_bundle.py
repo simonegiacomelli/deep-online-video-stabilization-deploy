@@ -50,7 +50,7 @@ parser.add_argument('--refine', type=int, default=1)
 parser.add_argument('--no_bm', type=int, default=1)
 parser.add_argument('--gpu_memory_fraction', type=float, default=0.1)
 parser.add_argument('--deploy-vis', action='store_true')
-args = parser.parse_args(tmp_args)
+args = parser.parse_args(argv)
 
 MaxSpan = args.max_span
 args.indices = indices[1:]

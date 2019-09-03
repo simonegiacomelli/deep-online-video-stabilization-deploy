@@ -12,7 +12,7 @@ import sys
 try:
     import google.colab
 
-    py_folder = os.path.dirname(__file__)
+    py_folder = os.path.abspath('')
     print('processing', py_folder)
     if not py_folder in sys.path:
         sys.path.append(py_folder)
@@ -26,7 +26,7 @@ try:
            '--output-dir ./output/v2_93/Regular ' \
            '--test-list datas/Regular/list.txt ' \
            '--prefix datas/Regular'.split(' ')
-    print(argv)
+    os.chdir('/content/drive/My Drive/colab/unshake/demo')
 except:
     IN_COLAB = False
     argv = sys.argv

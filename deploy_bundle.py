@@ -18,8 +18,7 @@ try:
         sys.path.append(py_folder)
 
     IN_COLAB = True
-    argv = 'exe.py ' \
-           '--model-dir ./models/v2_93/ ' \
+    argv = '--model-dir ./models/v2_93/ ' \
            '--model-name model-90000 ' \
            '--before-ch 31 ' \
            '--deploy-vis ' \

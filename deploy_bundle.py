@@ -26,6 +26,7 @@ try:
            '--output-dir ./output/v2_93/Regular  ' \
            '--test-list datas/Regular/list.txt ' \
            '--prefix datas/Regular'.split(' ')
+    print(argv)
 except:
     IN_COLAB = False
     argv = sys.argv

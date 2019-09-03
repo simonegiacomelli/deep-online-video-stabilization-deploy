@@ -13,6 +13,7 @@ try:
     import google.colab
 
     py_folder = os.path.dirname(__file__)
+    print('processing', py_folder)
     if not py_folder in sys.path:
         sys.path.append(py_folder)
 

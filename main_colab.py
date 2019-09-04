@@ -1,9 +1,9 @@
 import os
 import sys
 
-py_folder = os.path.abspath('repo')
-print('processing', py_folder)
-print('f',__file__)
+
+py_folder = '/content/repo'
+print('adding', py_folder,'to sys.path')
 if not py_folder in sys.path:
     sys.path.append(py_folder)
 

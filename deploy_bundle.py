@@ -1,3 +1,6 @@
+from config import *
+
+
 def main(argv):
     import tensorflow as tf
     import numpy as np
@@ -36,7 +39,6 @@ def main(argv):
     parser.add_argument('--deploy-vis', action='store_true')
     args = parser.parse_args(argv)
 
-    from config import *
 
     MaxSpan = args.max_span
     args.indices = indices[1:]

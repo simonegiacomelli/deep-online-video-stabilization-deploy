@@ -1,7 +1,7 @@
 import os
 import sys
 
-print('v1')
+print('v1.1)
 py_folder = '/content/repo'
 print('adding', py_folder, 'to sys.path')
 if not py_folder in sys.path:

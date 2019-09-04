@@ -2,6 +2,7 @@ from config import *
 
 
 def main(argv):
+    print('running deploy_bundle.py v1.0')
     import tensorflow as tf
     import numpy as np
     from PIL import Image

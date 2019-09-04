@@ -12,21 +12,7 @@ import sys
 try:
     import google.colab
 
-    py_folder = os.path.abspath('')
-    print('processing', py_folder)
-    if not py_folder in sys.path:
-        sys.path.append(py_folder)
-
     IN_COLAB = True
-    argv = '--model-dir ./models/v2_93/ ' \
-           '--model-name model-90000 ' \
-           '--before-ch 31 ' \
-           '--deploy-vis ' \
-           '--gpu_memory_fraction 0.9 ' \
-           '--output-dir ./output/v2_93/Regular ' \
-           '--test-list datas/Regular/list.txt ' \
-           '--prefix datas/Regular'.split(' ')
-    os.chdir('/content/drive/My Drive/colab/unshake/demo')
 except:
     IN_COLAB = False
     argv = sys.argv

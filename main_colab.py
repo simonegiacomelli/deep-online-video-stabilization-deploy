@@ -1,7 +1,7 @@
 import os
 import sys
 
-py_folder = os.path.abspath('')
+py_folder = os.path.abspath('repo')
 print('processing', py_folder)
 if not py_folder in sys.path:
     sys.path.append(py_folder)

@@ -23,4 +23,4 @@ import imp
 import deploy_bundle
 
 imp.reload(deploy_bundle)
-deploy_bundle.argv = argv
+deploy_bundle.main(argv)
